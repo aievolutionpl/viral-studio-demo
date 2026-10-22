@@ -1,0 +1,44 @@
+{
+  "examples": [
+    {
+      "id": "ai-dunk",
+      "name": "AI Dunk",
+      "tagline": "Koszykarski skok — jeden z najczęściej udostępnianych sportowych viralów.",
+      "category": "sports",
+      "duration": 7,
+      "scene": "demo/ai-dunk.png",
+      "video": "demo/ai-dunk.mp4",
+      "model": "nano-banana-2 → seedance 1.0 pro"
+    },
+    {
+      "id": "cyberpunk-tokyo",
+      "name": "Cyberpunk Tokyo",
+      "tagline": "Neonowe miasto, 6 sekund, wysoki kontrast.",
+      "category": "anime",
+      "duration": 6,
+      "scene": "demo/cyberpunk-tokyo.png",
+      "video": "demo/cyberpunk-tokyo.mp4",
+      "model": "nano-banana-2 → seedance 1.0 pro"
+    },
+    {
+      "id": "money-flex",
+      "name": "Money Flex",
+      "tagline": "Tonienie w kasie — najczęściej udostępniany format w 2026.",
+      "category": "funny",
+      "duration": 7,
+      "scene": "demo/money-flex.png",
+      "video": "demo/money-flex.mp4",
+      "model": "nano-banana-2 → seedance 1.0 pro"
+    },
+    {
+      "id": "orange-studio-dance",
+      "name": "Orange Studio Dance",
+      "tagline": "Klasyczny viral w pomarańczowym studiu. Hook w 1 sekundzie.",
+      "category": "dance",
+      "duration": 8,
+      "scene": "demo/orange-studio-dance.png",
+      "video": "demo/orange-studio-dance.mp4",
+      "model": "nano-banana-2 → seedance 1.0 pro"
+    }
+  ]
+}

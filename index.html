@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Przykłady — Viral Studio demo | AI Evolution Polska</title>
+<meta name="description" content="Prawdziwe, wygenerowane przykłady: zdjęcie twarzy → scena → wideo 9:16. Zobacz, jak działa Viral Studio AI Evolution Polska.">
+<meta property="og:title" content="Przykłady — Viral Studio demo">
+<meta property="og:description" content="Jedno zdjęcie. Dwanaście formatów. Prawdziwe wyniki bez retuszu.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230E1330'/%3E%3Cpath d='M20 44 L32 16 L44 44' stroke='%235B4DFF' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/demo.css">
+</head>
+<body class="demo-body">
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span class="brand-text">Viral&nbsp;Studio <em>by AI Evolution Polska</em></span>
+    </a>
+    <nav class="nav-links">
+      <a href="./">Przykłady</a>
+      <a href="/#templates">Template'y</a>
+      <a href="/#pricing">Ceny</a>
+      <a href="/#studio">Studio</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="demo-hero">
+    <span class="eyebrow">Demo · prawdziwe wygenerowane materiały</span>
+    <h1>Jedno zdjęcie.<br><span class="grad">Cztery różne światy.</span></h1>
+    <p class="lede">Wszystko poniżej powstało z <strong>tego samego zdjęcia źródłowego</strong> — bez retuszu, bez ręcznego montażu. Kliknij play, żeby zobaczyć ruch.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/#studio">Zrób swoje wideo</a>
+      <a class="btn btn-ghost" href="#pipeline">Zobacz pipeline</a>
+    </div>
+  </section>
+
+  <section class="source-strip">
+    <div class="source-card">
+      <img src="demo/face-source.png" alt="Zdjęcie źródłowe" loading="lazy">
+      <div>
+        <strong>Input</strong>
+        <p>Portret z telefonu. Dobre światło, twarz w kadrze, bez filtra.</p>
+      </div>
+    </div>
+    <div class="source-arrow" aria-hidden="true">→</div>
+    <div class="source-card">
+      <div class="mini-pipeline">
+        <span>Nano Banana 2</span><span class="mini-arrow">→</span><span>Seedance Pro</span><span class="mini-arrow">→</span><span>MP4 9:16</span>
+      </div>
+      <div>
+        <strong>Output</strong>
+        <p>5–10 sekund w pionie, gotowe do publikacji bez konwersji.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-wrap" id="examples">
+    <div class="section-head">
+      <h2>Przykłady</h2>
+      <p id="galleryCount">Wczytuję…</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <noscript>Włącz JavaScript, żeby zobaczyć galerię wideo.</noscript>
+    </div>
+  </section>
+
+  <section class="gallery-wrap" id="pipeline">
+    <div class="section-head">
+      <h2>Co dokładnie się dzieje</h2>
+      <p>Trzy kroki, dwa modele, jeden plik wynikowy.</p>
+    </div>
+    <div class="pipe">
+      <article class="pipe-step">
+        <span class="pipe-num">01</span>
+        <h3>Zdrojka</h3>
+        <p>Twoje zdjęcie idzie do CDN fal.ai. Nie trzymamy go na serwerze aplikacji — mamy tylko URL.</p>
+        <code>POST /storage/upload/initiate</code>
+      </article>
+      <article class="pipe-step">
+        <span class="pipe-num">02</span>
+        <h3>Scena</h3>
+        <p>Nano Banana 2 czyta prompt template'u i wstawia Twoją twarz w kadr — zachowując rysy, wiek i wyraz.</p>
+        <code>fal-ai/nano-banana-2/edit · 9:16 · $0,08</code>
+      </article>
+      <article class="pipe-step">
+        <span class="pipe-num">03</span>
+        <h3>Ruch</h3>
+        <p>Seedance 1.0 Pro animuje scenę osobnym promptem ruchu. Kamera, taniec, pościg — cokolwiek zakłada template.</p>
+        <code>fal-ai/bytedance/seedance/v1/pro/image-to-video</code>
+      </article>
+      <article class="pipe-step">
+        <span class="pipe-num">04</span>
+        <h3>Copy</h3>
+        <p>OpenRouter dopisuje 5 hooków po polsku, tekst na ekran i hashtagi — pod platformę, nie pod Google.</p>
+        <code>openrouter · google/gemini-2.5-flash</code>
+      </article>
+    </div>
+  </section>
+
+  <section class="honest">
+    <div class="honest-card">
+      <h2>Co realnie wychodzi, a co wymaga dwóch podejść</h2>
+      <ul>
+        <li><strong>Działa za pierwszym razem:</strong> portretowe ujęcia, studia, tło jednolite, taniec od pasa w górę.</li>
+        <li><strong>Czasem wymaga powtórki:</strong> dłonie w kadrze, bardzo dynamiczne ruchy całego ciała, ostre profile.</li>
+        <li><strong>Nie robimy:</strong> twarzy osób trzecich bez zgody, deepfake'ów polityków, treści dla dorosłych.</li>
+        <li><strong>Koszt jednego podejścia:</strong> $0,33–0,72 (model + wideo). Retry to kolejny koszt, nie „darmowy czas w chmurze”.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <div><strong>Viral Studio</strong> — projekt AI Evolution Polska.</div>
+    <p class="ai-note">Ta platforma jest w 100% prowadzona przez agenta AI. Materiały demo zostały wygenerowane automatycznie i mogą zawierać artefakty — sprawdź je przed publikacją. Twarz użyta w demo jest syntetyczna i nie przedstawia realnej osoby.</p>
+    <div class="foot-links"><a href="./">Studio</a><a href="/#templates">Template'y</a><a href="/#pricing">Ceny</a></div>
+  </div>
+</footer>
+
+<script type="module" src="/demo.js"></script>
+</body>
+</html>
